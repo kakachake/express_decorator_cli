@@ -1,7 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import { getResponseData } from "../utils/util";
-import { get, post, use } from "../decorator";
-import { createController } from "../decorator";
+import { get, post, use, createController } from "../decorator";
 interface RequestWithBody extends Request {
   body: {
     [key: string]: string | undefined;
